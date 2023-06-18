@@ -22,17 +22,17 @@ function maxDiff(list) {
 // or
 
 function maxDiff(list) {
-   let smallestValue = Infinity;
-   let biggestValue = -Infinity;
-   if(list.length === 0) return 0;
-   for (i=0; i < list.length; i++) {
-     if(list[i] > biggestValue) {
-       biggestValue = list[i];
-     }
-     if(list[i] < smallestValue) {
-       smallestValue = list[i];
-     }
-   }
-   return biggestValue - (smallestValue);
+  let smallestValue = Infinity;
+  let biggestValue = -Infinity;
+  if(list.length === 0) return 0;
+  for (i=0; i < list.length; i++) {
+    if(list[i] > biggestValue) {
+      biggestValue = list[i];
+    }
+    if(list[i] < smallestValue) {
+      smallestValue = list[i];
+    }
+  }
+  return biggestValue - (smallestValue);
   
- };
+};
